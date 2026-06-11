@@ -172,6 +172,97 @@ Keys can be revoked at any time from the same screen by long-pressing a key card
 > **Note:** API keys grant read-only access to data owned by the practitioner who created
 > them. They cannot create assessments, modify patients, or access other users' data.
 
+## Example Scripts
+
+The `examples/` directory contains ready-to-run scripts. All scripts accept `--url` and
+`--key` flags, or read `MOTABY_URL` / `MOTABY_API_KEY` from environment variables.
+
+### `export_all.py` — Export everything
+
+Download every assessment to `assessments.json` and `assessments.csv`, with optional
+filtering by status or study:
+
+```bash
+python examples/export_all.py \
+    --url  https://motaby.de \
+    --key  mby_... \
+    --out  ./output \
+    --status final
+```
+
+### `patient_export.py` — All data for one patient
+
+Export every assessment for a single patient. Creates one JSON file per assessment type
+plus an overall summary CSV:
+
+```bash
+python examples/patient_export.py \
+    --url     https://motaby.de \
+    --key     mby_... \
+    --patient P001 \
+    --out     ./output
+```
+
+Output layout:
+```
+output/P001/
+    assessments.json       # all records
+    assessments.csv        # flat summary table
+    spiral-drawing.json    # per-type splits
+    finger-tapping.json
+    ...
+```
+
+### `assessment_type_export.py` — All data for one assessment type
+
+Export every session of a specific assessment across all patients, with the raw `data`
+payload flattened into CSV columns — ready for ML feature extraction:
+
+```bash
+python examples/assessment_type_export.py \
+    --url   https://motaby.de \
+    --key   mby_... \
+    --code  spiral-drawing \
+    --out   ./output \
+    --date-from 2025-01-01
+```
+
+Output layout:
+```
+output/spiral-drawing/
+    all.json          # full records
+    all.csv           # flattened (data.* columns)
+    per_patient.json  # grouped by patient_id
+```
+
+### `summary.py` — Quick overview
+
+Print a dashboard of counts by assessment type, status, patient, and month:
+
+```bash
+python examples/summary.py \
+    --url  https://motaby.de \
+    --key  mby_...
+```
+
+Sample output:
+```
+════════════════════════════════════════════════════════════
+  MOTABY — Data Summary   2025-06-11 09:00 UTC
+════════════════════════════════════════════════════════════
+  Assessments :  1 247
+  Patients    :    83
+  Batteries   :    12
+
+  Assessments by type
+  ────────────────────────────────────────────────────────
+  Code                           Count   Final%
+  spiral-drawing                   314     92%  ████████████████░░░░
+  finger-tapping                   289     88%  ██████████████░░░░░░
+  nine-hole-peg                    201     95%  ██████████░░░░░░░░░░
+  ...
+```
+
 ## Development Setup
 
 ```bash
