@@ -28,13 +28,14 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from motaby import MOTABYClient, MOTABYError
+from motaby.exceptions import AuthenticationError
 
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Export all MOTABY assessments to disk.")
     p.add_argument("--url", default=os.environ.get("MOTABY_URL"), help="Backend base URL")
     p.add_argument("--key", default=os.environ.get("MOTABY_API_KEY"), help="API key (mby_...)")
-    p.add_argument("--out", default=".", help="Output directory (default: current directory)")
+    p.add_argument("--out", default="./motaby_export", help="Output directory (default: ./motaby_export)")
     p.add_argument("--study", default=None, help="Filter by study identifier")
     p.add_argument("--status", default=None, choices=["preliminary", "final"],
                    help="Filter by status")
@@ -58,7 +59,15 @@ def main() -> None:
             sys.exit(1)
 
         print("Fetching assessments...", flush=True)
-        assessments = client.assessments.list_all(status=args.status)
+        try:
+            assessments = client.assessments.list_all(status=args.status)
+        except AuthenticationError:
+            print(
+                "Error: API key is invalid or expired. Create a new key in the MOTABY app "
+                "(Settings → API Keys) and pass it with --key.",
+                file=sys.stderr,
+            )
+            sys.exit(1)
 
         if args.study:
             assessments = [a for a in assessments if a.study == args.study]
@@ -96,6 +105,34 @@ def main() -> None:
 
         except ImportError:
             print("  (pandas not installed — CSV skipped; run: pip install motaby-client[pandas])")
+
+        # ── Readout download ─────────────────────────────────────────────────
+        # Readouts are the processed output files (CSV, JSON, etc.) from each
+        # assessment. QC files and video files are excluded server-side.
+        assessments_with_readouts = [a for a in assessments if a.readouts]
+        print(
+            f"\nDownloading readout files ({sum(len(a.readouts) for a in assessments_with_readouts)} files"
+            f" across {len(assessments_with_readouts)} assessments)...",
+            flush=True,
+        )
+        readouts_dir = out_dir / "readouts"
+        readouts_dir.mkdir(exist_ok=True)
+        downloaded = 0
+        skipped = 0
+        for a in assessments_with_readouts:
+            assessment_dir = readouts_dir / str(a.id)
+            assessment_dir.mkdir(exist_ok=True)
+            for r in a.readouts:
+                try:
+                    saved = client.assessments.download_readout(
+                        str(a.id), r.name, assessment_dir
+                    )
+                    downloaded += 1
+                    print(f"  ✓ [{r.layer}] {saved.name}", flush=True)
+                except Exception as exc:
+                    skipped += 1
+                    print(f"  ✗ {r.name}: {exc}", flush=True)
+        print(f"  → {downloaded} readout files downloaded, {skipped} skipped")
 
         # ── Quick summary ────────────────────────────────────────────────────
         by_code: dict[str, int] = {}

@@ -1,0 +1,1440 @@
+[
+  {
+    "id": "3b831ef6-88f8-4f83-bd66-7d2cc6e09d1a",
+    "patient_id": "123",
+    "assessment_code": "stance",
+    "assessment_type": "video",
+    "status": "final",
+    "data": {
+      "media_files": [
+        {
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/3b831ef6-88f8-4f83-bd66-7d2cc6e09d1a/884B19B1-2C46-42DC-AA3E-BB68B5C30D45.MOV",
+          "type": "video",
+          "mime_type": "video/mp4"
+        }
+      ],
+      "readout_urls": [
+        {
+          "name": "raw_coco_sequence.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/3b831ef6-88f8-4f83-bd66-7d2cc6e09d1a/dyg_raw_coco_sequence.csv",
+          "description": "Smoothed and interpolated kinematic time series",
+          "layer": "L1"
+        },
+        {
+          "name": "raw_coco_sequence_precleaned.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/3b831ef6-88f8-4f83-bd66-7d2cc6e09d1a/dyg_raw_coco_sequence_precleaned.csv",
+          "description": "Unsmoothed, non-interpolated kinematic time series",
+          "layer": "L1"
+        },
+        {
+          "name": "joint_df.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/3b831ef6-88f8-4f83-bd66-7d2cc6e09d1a/dyg_joint_df.csv",
+          "description": "Angles and distances of kinematic readouts",
+          "layer": "L2"
+        },
+        {
+          "name": "joint_df_features.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/3b831ef6-88f8-4f83-bd66-7d2cc6e09d1a/dyg_joint_df_features.csv",
+          "description": "Features derived from kinematic readouts",
+          "layer": "L3"
+        },
+        {
+          "name": "884B19B1-2C46-42DC-AA3E-BB68B5C30D45_with_frames.mp4",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/3b831ef6-88f8-4f83-bd66-7d2cc6e09d1a/dyg_884B19B1-2C46-42DC-AA3E-BB68B5C30D45_with_frames.mp4",
+          "description": "Annotated video with pose estimation frames",
+          "layer": "QC"
+        },
+        {
+          "name": "dyg_qc_report.json",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/3b831ef6-88f8-4f83-bd66-7d2cc6e09d1a/dyg_dyg_qc_report.json",
+          "description": "Quality Control Report (JSON)",
+          "layer": "QC"
+        },
+        {
+          "name": "dyg_qc_report.txt",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/3b831ef6-88f8-4f83-bd66-7d2cc6e09d1a/dyg_dyg_qc_report.txt",
+          "description": "Quality Control Report (Text)",
+          "layer": "QC"
+        }
+      ]
+    },
+    "configuration": {
+      "eyes": "open",
+      "frame_rate": "30",
+      "feet_position": "together",
+      "video_quality": "1080p"
+    },
+    "effective_datetime": "2026-06-11T12:46:31.808000",
+    "created_at": "2026-06-11T12:40:54.205430",
+    "notes": "[Battery: SARA] [Config: Eyes: open \u2022 Feet Position: together]",
+    "study": "ESMI",
+    "media_count": 1,
+    "media_items": [],
+    "readouts": [
+      {
+        "name": "raw_coco_sequence.csv",
+        "layer": "L1",
+        "description": "Smoothed and interpolated kinematic time series",
+        "content_type": null,
+        "size": null
+      },
+      {
+        "name": "raw_coco_sequence_precleaned.csv",
+        "layer": "L1",
+        "description": "Unsmoothed, non-interpolated kinematic time series",
+        "content_type": null,
+        "size": null
+      },
+      {
+        "name": "joint_df.csv",
+        "layer": "L2",
+        "description": "Angles and distances of kinematic readouts",
+        "content_type": null,
+        "size": null
+      },
+      {
+        "name": "joint_df_features.csv",
+        "layer": "L3",
+        "description": "Features derived from kinematic readouts",
+        "content_type": null,
+        "size": null
+      }
+    ]
+  },
+  {
+    "id": "5d3c656c-13ff-4005-889e-b67f6b840854",
+    "patient_id": "awe",
+    "assessment_code": "timed-up-go",
+    "assessment_type": "video",
+    "status": "final",
+    "data": {
+      "media_files": [
+        {
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/awe/assessments/5d3c656c-13ff-4005-889e-b67f6b840854/timed-up-go_1781000867668.mov",
+          "type": "video",
+          "mime_type": "video/mp4"
+        }
+      ],
+      "readout_urls": [
+        {
+          "name": "raw_coco_sequence.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/awe/assessments/5d3c656c-13ff-4005-889e-b67f6b840854/dyg_raw_coco_sequence.csv",
+          "description": "Smoothed and interpolated kinematic time series",
+          "layer": "L1"
+        },
+        {
+          "name": "raw_coco_sequence_precleaned.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/awe/assessments/5d3c656c-13ff-4005-889e-b67f6b840854/dyg_raw_coco_sequence_precleaned.csv",
+          "description": "Unsmoothed, non-interpolated kinematic time series",
+          "layer": "L1"
+        },
+        {
+          "name": "joint_df.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/awe/assessments/5d3c656c-13ff-4005-889e-b67f6b840854/dyg_joint_df.csv",
+          "description": "Angles and distances of kinematic readouts",
+          "layer": "L2"
+        },
+        {
+          "name": "joint_df_features.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/awe/assessments/5d3c656c-13ff-4005-889e-b67f6b840854/dyg_joint_df_features.csv",
+          "description": "Features derived from kinematic readouts",
+          "layer": "L3"
+        },
+        {
+          "name": "timed-up-go_1781000867668_with_frames.mp4",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/awe/assessments/5d3c656c-13ff-4005-889e-b67f6b840854/dyg_timed-up-go_1781000867668_with_frames.mp4",
+          "description": "Annotated video with pose estimation frames",
+          "layer": "QC"
+        },
+        {
+          "name": "dyg_qc_report.json",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/awe/assessments/5d3c656c-13ff-4005-889e-b67f6b840854/dyg_dyg_qc_report.json",
+          "description": "Quality Control Report (JSON)",
+          "layer": "QC"
+        },
+        {
+          "name": "dyg_qc_report.txt",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/awe/assessments/5d3c656c-13ff-4005-889e-b67f6b840854/dyg_dyg_qc_report.txt",
+          "description": "Quality Control Report (Text)",
+          "layer": "QC"
+        }
+      ]
+    },
+    "configuration": {
+      "frame_rate": "30",
+      "walking_aid": "none",
+      "video_quality": "1080p"
+    },
+    "effective_datetime": "2026-06-09T10:27:15.389000",
+    "created_at": "2026-06-09T10:21:53.987191",
+    "notes": "[Config: Walking Aid: none \u2022 Video Quality: 1080p \u2022 Frame Rate: 30]",
+    "study": "STROKE",
+    "media_count": 1,
+    "media_items": [],
+    "readouts": [
+      {
+        "name": "raw_coco_sequence.csv",
+        "layer": "L1",
+        "description": "Smoothed and interpolated kinematic time series",
+        "content_type": null,
+        "size": null
+      },
+      {
+        "name": "raw_coco_sequence_precleaned.csv",
+        "layer": "L1",
+        "description": "Unsmoothed, non-interpolated kinematic time series",
+        "content_type": null,
+        "size": null
+      },
+      {
+        "name": "joint_df.csv",
+        "layer": "L2",
+        "description": "Angles and distances of kinematic readouts",
+        "content_type": null,
+        "size": null
+      },
+      {
+        "name": "joint_df_features.csv",
+        "layer": "L3",
+        "description": "Features derived from kinematic readouts",
+        "content_type": null,
+        "size": null
+      }
+    ]
+  },
+  {
+    "id": "38d28212-8ee0-4c90-862d-ebdbbda6afbb",
+    "patient_id": "qwe",
+    "assessment_code": "spiral-drawing",
+    "assessment_type": "tablet",
+    "status": "final",
+    "data": {
+      "media_files": [],
+      "readout_urls": [
+        {
+          "name": "readouts_20260609_101916.json",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/qwe/assessments/38d28212-8ee0-4c90-862d-ebdbbda6afbb/readouts_20260609_101916.json",
+          "description": "Frontend-submitted assessment readout data",
+          "layer": "L1"
+        }
+      ]
+    },
+    "configuration": {
+      "hand": "dominant"
+    },
+    "effective_datetime": "2026-06-09T10:25:00.374000",
+    "created_at": "2026-06-09T10:19:16.756877",
+    "notes": "[Config: Hand: dominant] ;; Spiral drawing assessment completed on 9.6.2026",
+    "study": "STROKE",
+    "media_count": 0,
+    "media_items": [],
+    "readouts": [
+      {
+        "name": "readouts_20260609_101916.json",
+        "layer": "L1",
+        "description": "Frontend-submitted assessment readout data",
+        "content_type": null,
+        "size": null
+      }
+    ]
+  },
+  {
+    "id": "444894bc-5cc8-4086-a996-0db98630353e",
+    "patient_id": "qwer",
+    "assessment_code": "index-finger-rolling",
+    "assessment_type": "video",
+    "status": "final",
+    "data": {
+      "media_files": [
+        {
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/qwer/assessments/444894bc-5cc8-4086-a996-0db98630353e/recording_1781000200515.mp4",
+          "type": "video",
+          "mime_type": "video/mp4"
+        }
+      ],
+      "readout_urls": [
+        {
+          "name": "recording_1781000200515_hand_with_frames.mp4",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/qwer/assessments/444894bc-5cc8-4086-a996-0db98630353e/dyg_recording_1781000200515_hand_with_frames.mp4",
+          "description": "Annotated video with pose estimation frames",
+          "layer": "QC"
+        }
+      ]
+    },
+    "configuration": {
+      "variant": "default",
+      "frame_rate": "30",
+      "video_quality": "1080p"
+    },
+    "effective_datetime": "2026-06-09T10:16:01.513000",
+    "created_at": "2026-06-09T10:10:43.044954",
+    "notes": "[Config: Variant: default \u2022 Video Quality: 1080p \u2022 Frame Rate: 30]",
+    "study": "STROKE",
+    "media_count": 1,
+    "media_items": [],
+    "readouts": []
+  },
+  {
+    "id": "508d065b-6e8c-4d22-a486-1a5178d3dd66",
+    "patient_id": "123",
+    "assessment_code": "timed-up-go",
+    "assessment_type": "video",
+    "status": "final",
+    "data": {
+      "media_files": [
+        {
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/508d065b-6e8c-4d22-a486-1a5178d3dd66/timed-up-go_1780991800463.MOV",
+          "type": "video",
+          "mime_type": "video/mp4"
+        }
+      ],
+      "readout_urls": []
+    },
+    "configuration": {
+      "frame_rate": "30",
+      "walking_aid": "none",
+      "video_quality": "1080p"
+    },
+    "effective_datetime": "2026-06-09T07:56:10.959000",
+    "created_at": "2026-06-09T07:50:42.925053",
+    "notes": "[Config: Walking Aid: none \u2022 Video Quality: 1080p \u2022 Frame Rate: 30]",
+    "study": "ESMI",
+    "media_count": 0,
+    "media_items": [],
+    "readouts": []
+  },
+  {
+    "id": "c6ee59ba-1324-44bf-9848-c64b852a9583",
+    "patient_id": "3e3",
+    "assessment_code": "demographics",
+    "assessment_type": "questionnaire",
+    "status": "final",
+    "data": {
+      "media_files": [],
+      "readout_urls": [
+        {
+          "name": "readouts_20260608_221452.json",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/3e3/assessments/c6ee59ba-1324-44bf-9848-c64b852a9583/readouts_20260608_221452.json",
+          "description": "Frontend-submitted assessment readout data",
+          "layer": "L1"
+        }
+      ]
+    },
+    "configuration": {},
+    "effective_datetime": "2026-06-08T22:14:52.035422",
+    "created_at": "2026-06-08T22:14:52.047535",
+    "notes": "Patient Demographics completed on 9.6.2026",
+    "study": null,
+    "media_count": 0,
+    "media_items": [],
+    "readouts": [
+      {
+        "name": "readouts_20260608_221452.json",
+        "layer": "L1",
+        "description": "Frontend-submitted assessment readout data",
+        "content_type": null,
+        "size": null
+      }
+    ]
+  },
+  {
+    "id": "eee422b0-57e0-4b90-a256-30456360a3c4",
+    "patient_id": "eee",
+    "assessment_code": "spiral-drawing",
+    "assessment_type": "tablet",
+    "status": "final",
+    "data": {
+      "media_files": [
+        {
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/eee/assessments/eee422b0-57e0-4b90-a256-30456360a3c4/spiral_round_1_1780957075313.png",
+          "type": "image",
+          "mime_type": "image/png",
+          "round": 1
+        },
+        {
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/eee/assessments/eee422b0-57e0-4b90-a256-30456360a3c4/spiral_round_2_1780957075824.png",
+          "type": "image",
+          "mime_type": "image/png",
+          "round": 2
+        },
+        {
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/eee/assessments/eee422b0-57e0-4b90-a256-30456360a3c4/spiral_round_3_1780957076182.png",
+          "type": "image",
+          "mime_type": "image/png",
+          "round": 3
+        }
+      ],
+      "readout_urls": [
+        {
+          "name": "readouts_20260608_221156.json",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/eee/assessments/eee422b0-57e0-4b90-a256-30456360a3c4/readouts_20260608_221156.json",
+          "description": "Frontend-submitted assessment readout data",
+          "layer": "L1"
+        }
+      ]
+    },
+    "configuration": {
+      "hand": "right"
+    },
+    "effective_datetime": "2026-06-08T22:11:56.298723",
+    "created_at": "2026-06-08T22:11:56.311455",
+    "notes": "[Config: Hand: right] ;; Spiral drawing assessment completed on 9.6.2026",
+    "study": null,
+    "media_count": 0,
+    "media_items": [],
+    "readouts": [
+      {
+        "name": "readouts_20260608_221156.json",
+        "layer": "L1",
+        "description": "Frontend-submitted assessment readout data",
+        "content_type": null,
+        "size": null
+      }
+    ]
+  },
+  {
+    "id": "81d00031-11a7-4da8-9c1c-db64486492a2",
+    "patient_id": "111",
+    "assessment_code": "tandem-gait",
+    "assessment_type": "video",
+    "status": "final",
+    "data": {
+      "media_files": [
+        {
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/111/assessments/81d00031-11a7-4da8-9c1c-db64486492a2/recording_1780956984326.mp4",
+          "type": "video",
+          "mime_type": "video/mp4"
+        }
+      ],
+      "readout_urls": []
+    },
+    "configuration": {
+      "variant": "default"
+    },
+    "effective_datetime": "2026-06-08T22:10:30.125316",
+    "created_at": "2026-06-08T22:10:30.129851",
+    "notes": "Test [Battery: Donateyourgait] [Config: Variant: default]",
+    "study": null,
+    "media_count": 0,
+    "media_items": [],
+    "readouts": []
+  },
+  {
+    "id": "c4497b46-57e2-4002-bbea-3a50481cffeb",
+    "patient_id": "111",
+    "assessment_code": "10m-walk",
+    "assessment_type": "video",
+    "status": "final",
+    "data": {
+      "media_files": [
+        {
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/111/assessments/c4497b46-57e2-4002-bbea-3a50481cffeb/recording_1780956946610.mp4",
+          "type": "video",
+          "mime_type": "video/mp4"
+        }
+      ],
+      "readout_urls": []
+    },
+    "configuration": {
+      "pace": "fast",
+      "walking_aid": "walker"
+    },
+    "effective_datetime": "2026-06-08T22:09:52.269711",
+    "created_at": "2026-06-08T22:09:52.272584",
+    "notes": "Test [Battery: Donateyourgait] [Config: Pace: comfortable \u2022 Walking Aid: none]",
+    "study": null,
+    "media_count": 0,
+    "media_items": [],
+    "readouts": []
+  },
+  {
+    "id": "25d2fe1c-edf2-4922-a2c8-48b812c29c83",
+    "patient_id": "123",
+    "assessment_code": "timed-up-go",
+    "assessment_type": "video",
+    "status": "final",
+    "data": {
+      "media_files": [
+        {
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/25d2fe1c-edf2-4922-a2c8-48b812c29c83/018EE224-952A-40DF-9926-E4F5E6C88C04.MOV",
+          "type": "video",
+          "mime_type": "video/mp4"
+        }
+      ],
+      "readout_urls": []
+    },
+    "configuration": {
+      "frame_rate": "30",
+      "walking_aid": "none",
+      "video_quality": "1080p"
+    },
+    "effective_datetime": "2026-06-08T15:05:41.822000",
+    "created_at": "2026-06-08T15:00:02.960333",
+    "notes": "[Config: Walking Aid: none \u2022 Video Quality: 1080p \u2022 Frame Rate: 30]",
+    "study": "ESMI",
+    "media_count": 0,
+    "media_items": [],
+    "readouts": []
+  },
+  {
+    "id": "ddfd985c-a14f-4ead-b391-ae0dddd49a99",
+    "patient_id": "dfd",
+    "assessment_code": "10m-walk",
+    "assessment_type": "video",
+    "status": "final",
+    "data": {
+      "media_files": [
+        {
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/dfd/assessments/ddfd985c-a14f-4ead-b391-ae0dddd49a99/recording_1778594356260.mp4",
+          "type": "video",
+          "mime_type": "video/mp4"
+        }
+      ],
+      "readout_urls": [
+        {
+          "name": "readouts_20260512_135328.json",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/dfd/assessments/ddfd985c-a14f-4ead-b391-ae0dddd49a99/readouts_20260512_135328.json",
+          "description": "Frontend-submitted assessment readout data",
+          "layer": "L1"
+        },
+        {
+          "name": "recording_1778594356260_with_frames.mp4",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/dfd/assessments/ddfd985c-a14f-4ead-b391-ae0dddd49a99/dyg_recording_1778594356260_with_frames.mp4",
+          "description": "Annotated video with pose estimation frames",
+          "layer": "QC"
+        },
+        {
+          "name": "dyg_qc_report.json",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/dfd/assessments/ddfd985c-a14f-4ead-b391-ae0dddd49a99/dyg_dyg_qc_report.json",
+          "description": "Quality Control Report (JSON)",
+          "layer": "QC"
+        },
+        {
+          "name": "dyg_qc_report.txt",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/dfd/assessments/ddfd985c-a14f-4ead-b391-ae0dddd49a99/dyg_dyg_qc_report.txt",
+          "description": "Quality Control Report (Text)",
+          "layer": "QC"
+        }
+      ]
+    },
+    "configuration": {
+      "pace": "comfortable",
+      "walking_aid": "none"
+    },
+    "effective_datetime": "2026-05-12T13:53:28.978816",
+    "created_at": "2026-05-12T13:53:28.978826",
+    "notes": "[Config: Walking Aid: none \u2022 Pace: comfortable] ;; Recorded on 12.5.2026",
+    "study": null,
+    "media_count": 1,
+    "media_items": [],
+    "readouts": [
+      {
+        "name": "readouts_20260512_135328.json",
+        "layer": "L1",
+        "description": "Frontend-submitted assessment readout data",
+        "content_type": null,
+        "size": null
+      }
+    ]
+  },
+  {
+    "id": "1e45d821-b784-46c7-9ed3-2729c90d5513",
+    "patient_id": "123",
+    "assessment_code": "target-chase",
+    "assessment_type": "tablet",
+    "status": "final",
+    "data": {
+      "media_files": [],
+      "readout_urls": [
+        {
+          "name": "readouts_20260512_072442.json",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/1e45d821-b784-46c7-9ed3-2729c90d5513/readouts_20260512_072442.json",
+          "description": "Frontend-submitted assessment readout data",
+          "layer": "L1"
+        }
+      ]
+    },
+    "configuration": {
+      "hand": "dominant"
+    },
+    "effective_datetime": "2026-05-12T07:24:42.976073",
+    "created_at": "2026-05-12T07:24:42.976080",
+    "notes": "[Config: Hand: dominant] ;; Target chase assessment completed on 12.5.2026",
+    "study": null,
+    "media_count": 0,
+    "media_items": [],
+    "readouts": [
+      {
+        "name": "readouts_20260512_072442.json",
+        "layer": "L1",
+        "description": "Frontend-submitted assessment readout data",
+        "content_type": null,
+        "size": null
+      }
+    ]
+  },
+  {
+    "id": "9fc1489f-4459-488e-a1f8-63eedb03e159",
+    "patient_id": "345",
+    "assessment_code": "timed-up-go",
+    "assessment_type": "video",
+    "status": "final",
+    "data": {
+      "media_files": [
+        {
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/345/assessments/9fc1489f-4459-488e-a1f8-63eedb03e159/60D281A2-EFE2-4658-AF4F-47CAE6303D0B.MOV",
+          "type": "video",
+          "mime_type": "video/mp4"
+        }
+      ],
+      "readout_urls": [
+        {
+          "name": "raw_coco_sequence.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/345/assessments/9fc1489f-4459-488e-a1f8-63eedb03e159/dyg_raw_coco_sequence.csv",
+          "description": "Smoothed and interpolated kinematic time series",
+          "layer": "L1"
+        },
+        {
+          "name": "raw_coco_sequence_precleaned.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/345/assessments/9fc1489f-4459-488e-a1f8-63eedb03e159/dyg_raw_coco_sequence_precleaned.csv",
+          "description": "Unsmoothed, non-interpolated kinematic time series",
+          "layer": "L1"
+        },
+        {
+          "name": "joint_df.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/345/assessments/9fc1489f-4459-488e-a1f8-63eedb03e159/dyg_joint_df.csv",
+          "description": "Angles and distances of kinematic readouts",
+          "layer": "L2"
+        },
+        {
+          "name": "joint_df_features.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/345/assessments/9fc1489f-4459-488e-a1f8-63eedb03e159/dyg_joint_df_features.csv",
+          "description": "Features derived from kinematic readouts",
+          "layer": "L3"
+        },
+        {
+          "name": "60D281A2-EFE2-4658-AF4F-47CAE6303D0B_with_frames.mp4",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/345/assessments/9fc1489f-4459-488e-a1f8-63eedb03e159/dyg_60D281A2-EFE2-4658-AF4F-47CAE6303D0B_with_frames.mp4",
+          "description": "Annotated video with pose estimation frames",
+          "layer": "QC"
+        },
+        {
+          "name": "dyg_qc_report.json",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/345/assessments/9fc1489f-4459-488e-a1f8-63eedb03e159/dyg_dyg_qc_report.json",
+          "description": "Quality Control Report (JSON)",
+          "layer": "QC"
+        },
+        {
+          "name": "dyg_qc_report.txt",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/345/assessments/9fc1489f-4459-488e-a1f8-63eedb03e159/dyg_dyg_qc_report.txt",
+          "description": "Quality Control Report (Text)",
+          "layer": "QC"
+        }
+      ]
+    },
+    "configuration": {
+      "walking_aid": "none"
+    },
+    "effective_datetime": "2026-05-12T07:23:43.915927",
+    "created_at": "2026-05-12T07:23:43.915934",
+    "notes": "[Config: Walking Aid: none]",
+    "study": null,
+    "media_count": 1,
+    "media_items": [],
+    "readouts": [
+      {
+        "name": "raw_coco_sequence.csv",
+        "layer": "L1",
+        "description": "Smoothed and interpolated kinematic time series",
+        "content_type": null,
+        "size": null
+      },
+      {
+        "name": "raw_coco_sequence_precleaned.csv",
+        "layer": "L1",
+        "description": "Unsmoothed, non-interpolated kinematic time series",
+        "content_type": null,
+        "size": null
+      },
+      {
+        "name": "joint_df.csv",
+        "layer": "L2",
+        "description": "Angles and distances of kinematic readouts",
+        "content_type": null,
+        "size": null
+      },
+      {
+        "name": "joint_df_features.csv",
+        "layer": "L3",
+        "description": "Features derived from kinematic readouts",
+        "content_type": null,
+        "size": null
+      }
+    ]
+  },
+  {
+    "id": "62d9e26e-74af-4bd1-afe1-c5ecc6ccbd46",
+    "patient_id": "123",
+    "assessment_code": "timed-up-go",
+    "assessment_type": "video",
+    "status": "final",
+    "data": {
+      "media_files": [
+        {
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/62d9e26e-74af-4bd1-afe1-c5ecc6ccbd46/86C7ED9A-74B4-4E97-9E67-52F64DBCB6AD.MOV",
+          "type": "video",
+          "mime_type": "video/mp4"
+        }
+      ],
+      "readout_urls": [
+        {
+          "name": "raw_coco_sequence.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/62d9e26e-74af-4bd1-afe1-c5ecc6ccbd46/dyg_raw_coco_sequence.csv",
+          "description": "Smoothed and interpolated kinematic time series",
+          "layer": "L1"
+        },
+        {
+          "name": "raw_coco_sequence_precleaned.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/62d9e26e-74af-4bd1-afe1-c5ecc6ccbd46/dyg_raw_coco_sequence_precleaned.csv",
+          "description": "Unsmoothed, non-interpolated kinematic time series",
+          "layer": "L1"
+        },
+        {
+          "name": "joint_df.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/62d9e26e-74af-4bd1-afe1-c5ecc6ccbd46/dyg_joint_df.csv",
+          "description": "Angles and distances of kinematic readouts",
+          "layer": "L2"
+        },
+        {
+          "name": "joint_df_features.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/62d9e26e-74af-4bd1-afe1-c5ecc6ccbd46/dyg_joint_df_features.csv",
+          "description": "Features derived from kinematic readouts",
+          "layer": "L3"
+        },
+        {
+          "name": "86C7ED9A-74B4-4E97-9E67-52F64DBCB6AD_with_frames.mp4",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/62d9e26e-74af-4bd1-afe1-c5ecc6ccbd46/dyg_86C7ED9A-74B4-4E97-9E67-52F64DBCB6AD_with_frames.mp4",
+          "description": "Annotated video with pose estimation frames",
+          "layer": "QC"
+        }
+      ]
+    },
+    "configuration": {
+      "walking_aid": "none"
+    },
+    "effective_datetime": "2026-05-12T07:18:40.974967",
+    "created_at": "2026-05-12T07:18:40.974976",
+    "notes": "[Config: Walking Aid: none]",
+    "study": null,
+    "media_count": 1,
+    "media_items": [],
+    "readouts": [
+      {
+        "name": "raw_coco_sequence.csv",
+        "layer": "L1",
+        "description": "Smoothed and interpolated kinematic time series",
+        "content_type": null,
+        "size": null
+      },
+      {
+        "name": "raw_coco_sequence_precleaned.csv",
+        "layer": "L1",
+        "description": "Unsmoothed, non-interpolated kinematic time series",
+        "content_type": null,
+        "size": null
+      },
+      {
+        "name": "joint_df.csv",
+        "layer": "L2",
+        "description": "Angles and distances of kinematic readouts",
+        "content_type": null,
+        "size": null
+      },
+      {
+        "name": "joint_df_features.csv",
+        "layer": "L3",
+        "description": "Features derived from kinematic readouts",
+        "content_type": null,
+        "size": null
+      }
+    ]
+  },
+  {
+    "id": "3a24ddcb-607e-4b9d-b29c-b91a87a2d90f",
+    "patient_id": "123",
+    "assessment_code": "10m-walk",
+    "assessment_type": "video",
+    "status": "final",
+    "data": {
+      "media_files": [
+        {
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/3a24ddcb-607e-4b9d-b29c-b91a87a2d90f/C566BB5A-C363-444F-9048-5E9578610164.MOV",
+          "type": "video",
+          "mime_type": "video/mp4"
+        }
+      ],
+      "readout_urls": [
+        {
+          "name": "raw_coco_sequence.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/3a24ddcb-607e-4b9d-b29c-b91a87a2d90f/dyg_raw_coco_sequence.csv",
+          "description": "Smoothed and interpolated kinematic time series",
+          "layer": "L1"
+        },
+        {
+          "name": "raw_coco_sequence_precleaned.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/3a24ddcb-607e-4b9d-b29c-b91a87a2d90f/dyg_raw_coco_sequence_precleaned.csv",
+          "description": "Unsmoothed, non-interpolated kinematic time series",
+          "layer": "L1"
+        },
+        {
+          "name": "joint_df.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/3a24ddcb-607e-4b9d-b29c-b91a87a2d90f/dyg_joint_df.csv",
+          "description": "Angles and distances of kinematic readouts",
+          "layer": "L2"
+        },
+        {
+          "name": "joint_df_features.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/3a24ddcb-607e-4b9d-b29c-b91a87a2d90f/dyg_joint_df_features.csv",
+          "description": "Features derived from kinematic readouts",
+          "layer": "L3"
+        },
+        {
+          "name": "C566BB5A-C363-444F-9048-5E9578610164_with_frames.mp4",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/3a24ddcb-607e-4b9d-b29c-b91a87a2d90f/dyg_C566BB5A-C363-444F-9048-5E9578610164_with_frames.mp4",
+          "description": "Annotated video with pose estimation frames",
+          "layer": "QC"
+        }
+      ]
+    },
+    "configuration": {
+      "pace": "comfortable",
+      "walking_aid": "none"
+    },
+    "effective_datetime": "2026-05-11T15:26:58.648045",
+    "created_at": "2026-05-11T15:26:58.648055",
+    "notes": "[Config: Walking Aid: none \u2022 Pace: comfortable]",
+    "study": null,
+    "media_count": 1,
+    "media_items": [],
+    "readouts": [
+      {
+        "name": "raw_coco_sequence.csv",
+        "layer": "L1",
+        "description": "Smoothed and interpolated kinematic time series",
+        "content_type": null,
+        "size": null
+      },
+      {
+        "name": "raw_coco_sequence_precleaned.csv",
+        "layer": "L1",
+        "description": "Unsmoothed, non-interpolated kinematic time series",
+        "content_type": null,
+        "size": null
+      },
+      {
+        "name": "joint_df.csv",
+        "layer": "L2",
+        "description": "Angles and distances of kinematic readouts",
+        "content_type": null,
+        "size": null
+      },
+      {
+        "name": "joint_df_features.csv",
+        "layer": "L3",
+        "description": "Features derived from kinematic readouts",
+        "content_type": null,
+        "size": null
+      }
+    ]
+  },
+  {
+    "id": "953355cd-1e28-4a3c-8c83-19764644e19b",
+    "patient_id": "123",
+    "assessment_code": "timed-up-go",
+    "assessment_type": "video",
+    "status": "final",
+    "data": {
+      "media_files": [
+        {
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/953355cd-1e28-4a3c-8c83-19764644e19b/701163AF-D9D6-4A4F-9F4C-0D7C203CC8E0.MOV",
+          "type": "video",
+          "mime_type": "video/mp4"
+        }
+      ],
+      "readout_urls": [
+        {
+          "name": "raw_coco_sequence.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/953355cd-1e28-4a3c-8c83-19764644e19b/dyg_raw_coco_sequence.csv",
+          "description": "Smoothed and interpolated kinematic time series",
+          "layer": "L1"
+        },
+        {
+          "name": "raw_coco_sequence_precleaned.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/953355cd-1e28-4a3c-8c83-19764644e19b/dyg_raw_coco_sequence_precleaned.csv",
+          "description": "Unsmoothed, non-interpolated kinematic time series",
+          "layer": "L1"
+        },
+        {
+          "name": "joint_df.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/953355cd-1e28-4a3c-8c83-19764644e19b/dyg_joint_df.csv",
+          "description": "Angles and distances of kinematic readouts",
+          "layer": "L2"
+        },
+        {
+          "name": "joint_df_features.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/953355cd-1e28-4a3c-8c83-19764644e19b/dyg_joint_df_features.csv",
+          "description": "Features derived from kinematic readouts",
+          "layer": "L3"
+        },
+        {
+          "name": "701163AF-D9D6-4A4F-9F4C-0D7C203CC8E0_with_frames.mp4",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/953355cd-1e28-4a3c-8c83-19764644e19b/dyg_701163AF-D9D6-4A4F-9F4C-0D7C203CC8E0_with_frames.mp4",
+          "description": "Annotated video with pose estimation frames",
+          "layer": "QC"
+        }
+      ]
+    },
+    "configuration": {
+      "walking_aid": "none"
+    },
+    "effective_datetime": "2026-05-11T10:13:39.390052",
+    "created_at": "2026-05-11T10:13:39.390060",
+    "notes": "[Config: Walking Aid: none]",
+    "study": null,
+    "media_count": 0,
+    "media_items": [],
+    "readouts": [
+      {
+        "name": "raw_coco_sequence.csv",
+        "layer": "L1",
+        "description": "Smoothed and interpolated kinematic time series",
+        "content_type": null,
+        "size": null
+      },
+      {
+        "name": "raw_coco_sequence_precleaned.csv",
+        "layer": "L1",
+        "description": "Unsmoothed, non-interpolated kinematic time series",
+        "content_type": null,
+        "size": null
+      },
+      {
+        "name": "joint_df.csv",
+        "layer": "L2",
+        "description": "Angles and distances of kinematic readouts",
+        "content_type": null,
+        "size": null
+      },
+      {
+        "name": "joint_df_features.csv",
+        "layer": "L3",
+        "description": "Features derived from kinematic readouts",
+        "content_type": null,
+        "size": null
+      }
+    ]
+  },
+  {
+    "id": "c601eef4-0545-46ff-b647-8deb90feae72",
+    "patient_id": "123",
+    "assessment_code": "timed-up-go",
+    "assessment_type": "video",
+    "status": "final",
+    "data": {
+      "media_files": [
+        {
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/c601eef4-0545-46ff-b647-8deb90feae72/recording_1777553756970.mp4",
+          "type": "video",
+          "mime_type": "video/mp4"
+        }
+      ],
+      "readout_urls": [
+        {
+          "name": "readouts_20260430_125017.json",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/c601eef4-0545-46ff-b647-8deb90feae72/readouts_20260430_125017.json",
+          "description": "Frontend-submitted assessment readout data",
+          "layer": "L1"
+        },
+        {
+          "name": "raw_coco_sequence.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/c601eef4-0545-46ff-b647-8deb90feae72/dyg_raw_coco_sequence.csv",
+          "description": "Smoothed and interpolated kinematic time series",
+          "layer": "L1"
+        },
+        {
+          "name": "raw_coco_sequence_precleaned.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/c601eef4-0545-46ff-b647-8deb90feae72/dyg_raw_coco_sequence_precleaned.csv",
+          "description": "Unsmoothed, non-interpolated kinematic time series",
+          "layer": "L1"
+        },
+        {
+          "name": "joint_df.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/c601eef4-0545-46ff-b647-8deb90feae72/dyg_joint_df.csv",
+          "description": "Angles and distances of kinematic readouts",
+          "layer": "L2"
+        },
+        {
+          "name": "joint_df_features.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/c601eef4-0545-46ff-b647-8deb90feae72/dyg_joint_df_features.csv",
+          "description": "Features derived from kinematic readouts",
+          "layer": "L3"
+        },
+        {
+          "name": "recording_1777553756970_with_frames.mp4",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/c601eef4-0545-46ff-b647-8deb90feae72/dyg_recording_1777553756970_with_frames.mp4",
+          "description": "Annotated video with pose estimation frames",
+          "layer": "QC"
+        }
+      ]
+    },
+    "configuration": {
+      "walking_aid": "none"
+    },
+    "effective_datetime": "2026-04-30T12:50:17.471962",
+    "created_at": "2026-04-30T12:50:17.471970",
+    "notes": "[Battery: CI-HNO] [Config: Walking Aid: none] ;; Recorded on 30.4.2026",
+    "study": null,
+    "media_count": 0,
+    "media_items": [],
+    "readouts": [
+      {
+        "name": "readouts_20260430_125017.json",
+        "layer": "L1",
+        "description": "Frontend-submitted assessment readout data",
+        "content_type": null,
+        "size": null
+      },
+      {
+        "name": "raw_coco_sequence.csv",
+        "layer": "L1",
+        "description": "Smoothed and interpolated kinematic time series",
+        "content_type": null,
+        "size": null
+      },
+      {
+        "name": "raw_coco_sequence_precleaned.csv",
+        "layer": "L1",
+        "description": "Unsmoothed, non-interpolated kinematic time series",
+        "content_type": null,
+        "size": null
+      },
+      {
+        "name": "joint_df.csv",
+        "layer": "L2",
+        "description": "Angles and distances of kinematic readouts",
+        "content_type": null,
+        "size": null
+      },
+      {
+        "name": "joint_df_features.csv",
+        "layer": "L3",
+        "description": "Features derived from kinematic readouts",
+        "content_type": null,
+        "size": null
+      }
+    ]
+  },
+  {
+    "id": "5a5b734b-d249-4805-bc42-c04c9dcf3261",
+    "patient_id": "123",
+    "assessment_code": "stance",
+    "assessment_type": "video",
+    "status": "final",
+    "data": {
+      "media_files": [
+        {
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/5a5b734b-d249-4805-bc42-c04c9dcf3261/recording_1777553712292.mp4",
+          "type": "video",
+          "mime_type": "video/mp4"
+        }
+      ],
+      "readout_urls": [
+        {
+          "name": "raw_coco_sequence.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/5a5b734b-d249-4805-bc42-c04c9dcf3261/dyg_raw_coco_sequence.csv",
+          "description": "Smoothed and interpolated kinematic time series",
+          "layer": "L1"
+        },
+        {
+          "name": "raw_coco_sequence_precleaned.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/5a5b734b-d249-4805-bc42-c04c9dcf3261/dyg_raw_coco_sequence_precleaned.csv",
+          "description": "Unsmoothed, non-interpolated kinematic time series",
+          "layer": "L1"
+        },
+        {
+          "name": "joint_df.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/5a5b734b-d249-4805-bc42-c04c9dcf3261/dyg_joint_df.csv",
+          "description": "Angles and distances of kinematic readouts",
+          "layer": "L2"
+        },
+        {
+          "name": "joint_df_features.csv",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/5a5b734b-d249-4805-bc42-c04c9dcf3261/dyg_joint_df_features.csv",
+          "description": "Features derived from kinematic readouts",
+          "layer": "L3"
+        },
+        {
+          "name": "recording_1777553712292_with_frames.mp4",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/5a5b734b-d249-4805-bc42-c04c9dcf3261/dyg_recording_1777553712292_with_frames.mp4",
+          "description": "Annotated video with pose estimation frames",
+          "layer": "QC"
+        }
+      ]
+    },
+    "configuration": {
+      "eyes": "closed",
+      "feet_position": "together"
+    },
+    "effective_datetime": "2026-04-30T12:49:32.995010",
+    "created_at": "2026-04-30T12:49:32.995016",
+    "notes": "[Battery: CI-HNO] [Config: Eyes: open \u2022 Feet Position: shoulder_width]",
+    "study": null,
+    "media_count": 1,
+    "media_items": [],
+    "readouts": [
+      {
+        "name": "raw_coco_sequence.csv",
+        "layer": "L1",
+        "description": "Smoothed and interpolated kinematic time series",
+        "content_type": null,
+        "size": null
+      },
+      {
+        "name": "raw_coco_sequence_precleaned.csv",
+        "layer": "L1",
+        "description": "Unsmoothed, non-interpolated kinematic time series",
+        "content_type": null,
+        "size": null
+      },
+      {
+        "name": "joint_df.csv",
+        "layer": "L2",
+        "description": "Angles and distances of kinematic readouts",
+        "content_type": null,
+        "size": null
+      },
+      {
+        "name": "joint_df_features.csv",
+        "layer": "L3",
+        "description": "Features derived from kinematic readouts",
+        "content_type": null,
+        "size": null
+      }
+    ]
+  },
+  {
+    "id": "a7c986b2-ec27-45d5-bf98-8621651d8ffb",
+    "patient_id": "123",
+    "assessment_code": "demographics",
+    "assessment_type": "questionnaire",
+    "status": "final",
+    "data": {
+      "media_files": [],
+      "readout_urls": [
+        {
+          "name": "readouts_20260430_124852.json",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/a7c986b2-ec27-45d5-bf98-8621651d8ffb/readouts_20260430_124852.json",
+          "description": "Frontend-submitted assessment readout data",
+          "layer": "L1"
+        }
+      ]
+    },
+    "configuration": {},
+    "effective_datetime": "2026-04-30T12:48:52.632444",
+    "created_at": "2026-04-30T12:48:52.632451",
+    "notes": "[Battery: CI-HNO] ;; Patient Demographics completed on 30.4.2026",
+    "study": null,
+    "media_count": 0,
+    "media_items": [],
+    "readouts": [
+      {
+        "name": "readouts_20260430_124852.json",
+        "layer": "L1",
+        "description": "Frontend-submitted assessment readout data",
+        "content_type": null,
+        "size": null
+      }
+    ]
+  },
+  {
+    "id": "5ee1e3db-a913-4528-a524-550e0fd985c2",
+    "patient_id": "123",
+    "assessment_code": "timed-up-go",
+    "assessment_type": "video",
+    "status": "final",
+    "data": {
+      "media_files": [
+        {
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/5ee1e3db-a913-4528-a524-550e0fd985c2/recording_1777547657005.mp4",
+          "type": "video",
+          "mime_type": "video/mp4"
+        }
+      ],
+      "readout_urls": [
+        {
+          "name": "recording_1777547657005_with_frames.mp4",
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/5ee1e3db-a913-4528-a524-550e0fd985c2/dyg_recording_1777547657005_with_frames.mp4",
+          "description": "Annotated video with pose estimation frames",
+          "layer": "QC"
+        }
+      ]
+    },
+    "configuration": {
+      "walking_aid": "none"
+    },
+    "effective_datetime": "2026-04-30T11:08:36.586492",
+    "created_at": "2026-04-30T11:08:36.586500",
+    "notes": "[Config: Walking Aid: none]",
+    "study": null,
+    "media_count": 0,
+    "media_items": [],
+    "readouts": []
+  },
+  {
+    "id": "23eda615-2aca-4186-8eb0-700fca5c462c",
+    "patient_id": "123",
+    "assessment_code": "tandem-gait",
+    "assessment_type": "video",
+    "status": "final",
+    "data": {
+      "media_files": [
+        {
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/23eda615-2aca-4186-8eb0-700fca5c462c/recording_1777471530012.mp4",
+          "type": "video",
+          "mime_type": "video/mp4"
+        }
+      ],
+      "readout_urls": []
+    },
+    "configuration": {
+      "variant": "default"
+    },
+    "effective_datetime": "2026-04-29T13:59:48.965957",
+    "created_at": "2026-04-29T13:59:48.965965",
+    "notes": "[Config: Variant: default]",
+    "study": null,
+    "media_count": 0,
+    "media_items": [],
+    "readouts": []
+  },
+  {
+    "id": "40752a83-7066-46b7-9794-6a52fd6bf0c3",
+    "patient_id": "123",
+    "assessment_code": "timed-up-go",
+    "assessment_type": "video",
+    "status": "final",
+    "data": {
+      "media_files": [
+        {
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/40752a83-7066-46b7-9794-6a52fd6bf0c3/recording_1777469015454.mp4",
+          "type": "video",
+          "mime_type": "video/mp4"
+        }
+      ],
+      "readout_urls": []
+    },
+    "configuration": {
+      "walking_aid": "none"
+    },
+    "effective_datetime": "2026-04-29T13:17:55.777614",
+    "created_at": "2026-04-29T13:17:55.777624",
+    "notes": "[Config: Walking Aid: none]",
+    "study": null,
+    "media_count": 0,
+    "media_items": [],
+    "readouts": []
+  },
+  {
+    "id": "a4054d60-0ab4-45fa-8c62-b2ede8531c34",
+    "patient_id": "123",
+    "assessment_code": "timed-up-go",
+    "assessment_type": "video",
+    "status": "entered-in-error",
+    "data": {
+      "media_files": [
+        {
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/a4054d60-0ab4-45fa-8c62-b2ede8531c34/recording_1777463794236.mp4",
+          "type": "video",
+          "mime_type": "video/mp4"
+        }
+      ],
+      "readout_urls": []
+    },
+    "configuration": {
+      "walking_aid": "none"
+    },
+    "effective_datetime": "2026-04-29T11:50:54.950413",
+    "created_at": "2026-04-29T11:50:54.950421",
+    "notes": "[Config: Walking Aid: none]",
+    "study": null,
+    "media_count": 0,
+    "media_items": [],
+    "readouts": []
+  },
+  {
+    "id": "129855ca-3872-412e-95f5-3202b47ebce8",
+    "patient_id": "123",
+    "assessment_code": "timed-up-go",
+    "assessment_type": "video",
+    "status": "final",
+    "data": {
+      "media_files": [
+        {
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/129855ca-3872-412e-95f5-3202b47ebce8/recording_1777455003919.mp4",
+          "type": "video",
+          "mime_type": "video/mp4"
+        }
+      ],
+      "readout_urls": []
+    },
+    "configuration": {
+      "walking_aid": "none"
+    },
+    "effective_datetime": "2026-04-29T09:24:23.557204",
+    "created_at": "2026-04-29T09:24:23.557211",
+    "notes": "[Config: Walking Aid: none]",
+    "study": null,
+    "media_count": 0,
+    "media_items": [],
+    "readouts": []
+  },
+  {
+    "id": "fe3ded00-448e-467f-9364-043559a29138",
+    "patient_id": "123",
+    "assessment_code": "timed-up-go",
+    "assessment_type": "video",
+    "status": "final",
+    "data": {
+      "media_files": [
+        {
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/fe3ded00-448e-467f-9364-043559a29138/recording_1777453484456.mp4",
+          "type": "video",
+          "mime_type": "video/mp4"
+        }
+      ],
+      "readout_urls": []
+    },
+    "configuration": {
+      "walking_aid": "none"
+    },
+    "effective_datetime": "2026-04-29T08:59:09.134767",
+    "created_at": "2026-04-29T08:59:09.134773",
+    "notes": "[Config: Walking Aid: none]",
+    "study": null,
+    "media_count": 0,
+    "media_items": [],
+    "readouts": []
+  },
+  {
+    "id": "0097737b-23da-4f33-8b3b-c49082f3b0e0",
+    "patient_id": "123",
+    "assessment_code": "10m-walk",
+    "assessment_type": "video",
+    "status": "cancelled",
+    "data": {
+      "media_files": [
+        {
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/0097737b-23da-4f33-8b3b-c49082f3b0e0/recording_1777449706386.mp4",
+          "type": "video",
+          "mime_type": "video/mp4"
+        }
+      ],
+      "readout_urls": []
+    },
+    "configuration": {
+      "pace": "comfortable",
+      "walking_aid": "none"
+    },
+    "effective_datetime": "2026-04-29T08:34:37.825919",
+    "created_at": "2026-04-29T08:34:37.825926",
+    "notes": "[Config: Walking Aid: none \u2022 Pace: comfortable]",
+    "study": null,
+    "media_count": 0,
+    "media_items": [],
+    "readouts": []
+  },
+  {
+    "id": "33e43e4d-6a3e-4658-8879-e1a7dc006b03",
+    "patient_id": "123",
+    "assessment_code": "10m-walk",
+    "assessment_type": "video",
+    "status": "cancelled",
+    "data": {
+      "media_files": [
+        {
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/33e43e4d-6a3e-4658-8879-e1a7dc006b03/recording_1777449706386.mp4",
+          "type": "video",
+          "mime_type": "video/mp4"
+        }
+      ],
+      "readout_urls": []
+    },
+    "configuration": {
+      "pace": "comfortable",
+      "walking_aid": "none"
+    },
+    "effective_datetime": "2026-04-29T08:32:19.553834",
+    "created_at": "2026-04-29T08:32:19.553841",
+    "notes": "[Config: Walking Aid: none \u2022 Pace: comfortable]",
+    "study": null,
+    "media_count": 0,
+    "media_items": [],
+    "readouts": []
+  },
+  {
+    "id": "c675c761-d129-4e2b-8adf-e87270fee15e",
+    "patient_id": "123",
+    "assessment_code": "10m-walk",
+    "assessment_type": "video",
+    "status": "cancelled",
+    "data": {
+      "media_files": [
+        {
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/c675c761-d129-4e2b-8adf-e87270fee15e/recording_1777449706386.mp4",
+          "type": "video",
+          "mime_type": "video/mp4"
+        }
+      ],
+      "readout_urls": []
+    },
+    "configuration": {
+      "pace": "comfortable",
+      "walking_aid": "none"
+    },
+    "effective_datetime": "2026-04-29T08:31:07.077402",
+    "created_at": "2026-04-29T08:31:07.077408",
+    "notes": "[Config: Walking Aid: none \u2022 Pace: comfortable]",
+    "study": null,
+    "media_count": 0,
+    "media_items": [],
+    "readouts": []
+  },
+  {
+    "id": "08a8034e-6ce3-495b-99e2-91ab387daf62",
+    "patient_id": "123",
+    "assessment_code": "10m-walk",
+    "assessment_type": "video",
+    "status": "cancelled",
+    "data": {
+      "media_files": [
+        {
+          "url": "minio://practitioner-48bbb020-d51c-476a-a324-589463f0491d/patients/123/assessments/08a8034e-6ce3-495b-99e2-91ab387daf62/recording_1777449706386.mp4",
+          "type": "video",
+          "mime_type": "video/mp4"
+        }
+      ],
+      "readout_urls": []
+    },
+    "configuration": {
+      "pace": "comfortable",
+      "walking_aid": "none"
+    },
+    "effective_datetime": "2026-04-29T08:11:11.306511",
+    "created_at": "2026-04-29T08:11:11.306514",
+    "notes": "[Config: Walking Aid: none \u2022 Pace: comfortable]",
+    "study": null,
+    "media_count": 0,
+    "media_items": [],
+    "readouts": []
+  }
+]

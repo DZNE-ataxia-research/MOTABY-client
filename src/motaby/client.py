@@ -57,10 +57,8 @@ class MOTABYClient:
     def ping(self) -> bool:
         """Check connectivity to the MOTABY server. Returns True if reachable."""
         try:
-            self._http.get("/health")
-            return True
-        except MOTABYError:
-            return False
+            response = self._http._client.get("/health")
+            return response.status_code == 200
         except Exception:
             return False
 

@@ -81,6 +81,54 @@ class HTTPClient:
 
         raise MOTABYError(f"Request failed after {self._max_retries} attempts") from last_exc
 
+    def get_binary(self, path: str, params: Optional[Dict[str, Any]] = None) -> httpx.Response:
+        """
+        Perform a GET request with the same retry logic as get(), but return
+        the raw Response instead of parsing JSON. Used for file downloads.
+        Raises typed exceptions on auth/not-found errors; retries on 503/network errors.
+        """
+        attempt = 0
+        last_exc: Optional[Exception] = None
+
+        while attempt < self._max_retries:
+            try:
+                response = self._client.get(path, params=params)
+                if response.status_code in (200, 201):
+                    return response
+                if response.status_code == 401:
+                    raise AuthenticationError("Invalid or expired API key")
+                if response.status_code == 403:
+                    raise AuthorizationError("Access denied")
+                if response.status_code == 404:
+                    raise NotFoundError("Resource not found")
+                if response.status_code == 429:
+                    retry_after = int(response.headers.get("Retry-After", "30"))
+                    if attempt < self._max_retries - 1:
+                        time.sleep(min(retry_after, 60))
+                        attempt += 1
+                        continue
+                    raise RateLimitError("Rate limit exceeded", retry_after=retry_after)
+                if response.status_code >= 500:
+                    exc = ServerError(f"Server error: {response.status_code}")
+                    if attempt < self._max_retries - 1:
+                        time.sleep(2 ** attempt)
+                        attempt += 1
+                        last_exc = exc
+                        continue
+                    raise exc
+                raise MOTABYError(f"Unexpected status: {response.status_code}")
+            except (AuthenticationError, AuthorizationError, NotFoundError, RateLimitError, MOTABYError):
+                raise
+            except httpx.TransportError as e:
+                if attempt < self._max_retries - 1:
+                    time.sleep(2 ** attempt)
+                    attempt += 1
+                    last_exc = e
+                    continue
+                raise MOTABYError(f"Network error: {e}") from e
+
+        raise MOTABYError(f"Request failed after {self._max_retries} attempts") from last_exc
+
     def _handle_response(self, response: httpx.Response) -> Dict[str, Any]:
         """Map HTTP status codes to typed exceptions."""
         if response.status_code == 200 or response.status_code == 201:

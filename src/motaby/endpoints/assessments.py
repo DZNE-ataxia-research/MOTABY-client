@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from datetime import date
+from pathlib import Path
 from typing import Any, Dict, List, Optional, Union, TYPE_CHECKING
 
 from motaby._http import HTTPClient
@@ -75,6 +76,19 @@ class AssessmentsEndpoint:
         """Fetch a single assessment by ID (includes media items)."""
         data = self._http.get(f"/api/v1/export/assessments/{assessment_id}")
         return Assessment.from_dict(data)
+
+    def download_readout(self, assessment_id: str, name: str, dest: Path) -> Path:
+        """
+        Download a processed readout file (CSV, JSON, etc.) to *dest*.
+        If *dest* is a directory the readout filename is used.
+        QC and video files are rejected by the server.
+        Returns the path of the saved file.
+        """
+        url = f"/api/v1/export/assessments/{assessment_id}/readouts/download"
+        response = self._http.get_binary(url, params={"name": name})
+        out_path = Path(dest) / name if Path(dest).is_dir() else Path(dest)
+        out_path.write_bytes(response.content)
+        return out_path
 
     def to_dataframe(
         self,

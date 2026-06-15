@@ -1,0 +1,18 @@
+{
+  "exported_at": "2026-06-15T08:47:09.785202+00:00",
+  "total": 29,
+  "filters": {
+    "study": null,
+    "status": null
+  },
+  "by_code": {
+    "stance": 2,
+    "timed-up-go": 12,
+    "spiral-drawing": 2,
+    "index-finger-rolling": 1,
+    "demographics": 2,
+    "tandem-gait": 2,
+    "10m-walk": 7,
+    "target-chase": 1
+  }
+}

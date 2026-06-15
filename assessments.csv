@@ -1,0 +1,30 @@
+id,patient_id,assessment_code,assessment_type,status,created_at,effective_datetime,study,notes,media_count
+3b831ef6-88f8-4f83-bd66-7d2cc6e09d1a,123,stance,video,final,2026-06-11 12:40:54.205430,2026-06-11 12:46:31.808000,ESMI,[Battery: SARA] [Config: Eyes: open • Feet Position: together],1
+5d3c656c-13ff-4005-889e-b67f6b840854,awe,timed-up-go,video,final,2026-06-09 10:21:53.987191,2026-06-09 10:27:15.389000,STROKE,[Config: Walking Aid: none • Video Quality: 1080p • Frame Rate: 30],1
+38d28212-8ee0-4c90-862d-ebdbbda6afbb,qwe,spiral-drawing,tablet,final,2026-06-09 10:19:16.756877,2026-06-09 10:25:00.374000,STROKE,[Config: Hand: dominant] ;; Spiral drawing assessment completed on 9.6.2026,0
+444894bc-5cc8-4086-a996-0db98630353e,qwer,index-finger-rolling,video,final,2026-06-09 10:10:43.044954,2026-06-09 10:16:01.513000,STROKE,[Config: Variant: default • Video Quality: 1080p • Frame Rate: 30],1
+508d065b-6e8c-4d22-a486-1a5178d3dd66,123,timed-up-go,video,final,2026-06-09 07:50:42.925053,2026-06-09 07:56:10.959000,ESMI,[Config: Walking Aid: none • Video Quality: 1080p • Frame Rate: 30],0
+c6ee59ba-1324-44bf-9848-c64b852a9583,3e3,demographics,questionnaire,final,2026-06-08 22:14:52.047535,2026-06-08 22:14:52.035422,,Patient Demographics completed on 9.6.2026,0
+eee422b0-57e0-4b90-a256-30456360a3c4,eee,spiral-drawing,tablet,final,2026-06-08 22:11:56.311455,2026-06-08 22:11:56.298723,,[Config: Hand: right] ;; Spiral drawing assessment completed on 9.6.2026,0
+81d00031-11a7-4da8-9c1c-db64486492a2,111,tandem-gait,video,final,2026-06-08 22:10:30.129851,2026-06-08 22:10:30.125316,,Test [Battery: Donateyourgait] [Config: Variant: default],0
+c4497b46-57e2-4002-bbea-3a50481cffeb,111,10m-walk,video,final,2026-06-08 22:09:52.272584,2026-06-08 22:09:52.269711,,Test [Battery: Donateyourgait] [Config: Pace: comfortable • Walking Aid: none],0
+25d2fe1c-edf2-4922-a2c8-48b812c29c83,123,timed-up-go,video,final,2026-06-08 15:00:02.960333,2026-06-08 15:05:41.822000,ESMI,[Config: Walking Aid: none • Video Quality: 1080p • Frame Rate: 30],0
+ddfd985c-a14f-4ead-b391-ae0dddd49a99,dfd,10m-walk,video,final,2026-05-12 13:53:28.978826,2026-05-12 13:53:28.978816,,[Config: Walking Aid: none • Pace: comfortable] ;; Recorded on 12.5.2026,1
+1e45d821-b784-46c7-9ed3-2729c90d5513,123,target-chase,tablet,final,2026-05-12 07:24:42.976080,2026-05-12 07:24:42.976073,,[Config: Hand: dominant] ;; Target chase assessment completed on 12.5.2026,0
+9fc1489f-4459-488e-a1f8-63eedb03e159,345,timed-up-go,video,final,2026-05-12 07:23:43.915934,2026-05-12 07:23:43.915927,,[Config: Walking Aid: none],1
+62d9e26e-74af-4bd1-afe1-c5ecc6ccbd46,123,timed-up-go,video,final,2026-05-12 07:18:40.974976,2026-05-12 07:18:40.974967,,[Config: Walking Aid: none],1
+3a24ddcb-607e-4b9d-b29c-b91a87a2d90f,123,10m-walk,video,final,2026-05-11 15:26:58.648055,2026-05-11 15:26:58.648045,,[Config: Walking Aid: none • Pace: comfortable],1
+953355cd-1e28-4a3c-8c83-19764644e19b,123,timed-up-go,video,final,2026-05-11 10:13:39.390060,2026-05-11 10:13:39.390052,,[Config: Walking Aid: none],0
+c601eef4-0545-46ff-b647-8deb90feae72,123,timed-up-go,video,final,2026-04-30 12:50:17.471970,2026-04-30 12:50:17.471962,,[Battery: CI-HNO] [Config: Walking Aid: none] ;; Recorded on 30.4.2026,0
+5a5b734b-d249-4805-bc42-c04c9dcf3261,123,stance,video,final,2026-04-30 12:49:32.995016,2026-04-30 12:49:32.995010,,[Battery: CI-HNO] [Config: Eyes: open • Feet Position: shoulder_width],1
+a7c986b2-ec27-45d5-bf98-8621651d8ffb,123,demographics,questionnaire,final,2026-04-30 12:48:52.632451,2026-04-30 12:48:52.632444,,[Battery: CI-HNO] ;; Patient Demographics completed on 30.4.2026,0
+5ee1e3db-a913-4528-a524-550e0fd985c2,123,timed-up-go,video,final,2026-04-30 11:08:36.586500,2026-04-30 11:08:36.586492,,[Config: Walking Aid: none],0
+23eda615-2aca-4186-8eb0-700fca5c462c,123,tandem-gait,video,final,2026-04-29 13:59:48.965965,2026-04-29 13:59:48.965957,,[Config: Variant: default],0
+40752a83-7066-46b7-9794-6a52fd6bf0c3,123,timed-up-go,video,final,2026-04-29 13:17:55.777624,2026-04-29 13:17:55.777614,,[Config: Walking Aid: none],0
+a4054d60-0ab4-45fa-8c62-b2ede8531c34,123,timed-up-go,video,entered-in-error,2026-04-29 11:50:54.950421,2026-04-29 11:50:54.950413,,[Config: Walking Aid: none],0
+129855ca-3872-412e-95f5-3202b47ebce8,123,timed-up-go,video,final,2026-04-29 09:24:23.557211,2026-04-29 09:24:23.557204,,[Config: Walking Aid: none],0
+fe3ded00-448e-467f-9364-043559a29138,123,timed-up-go,video,final,2026-04-29 08:59:09.134773,2026-04-29 08:59:09.134767,,[Config: Walking Aid: none],0
+0097737b-23da-4f33-8b3b-c49082f3b0e0,123,10m-walk,video,cancelled,2026-04-29 08:34:37.825926,2026-04-29 08:34:37.825919,,[Config: Walking Aid: none • Pace: comfortable],0
+33e43e4d-6a3e-4658-8879-e1a7dc006b03,123,10m-walk,video,cancelled,2026-04-29 08:32:19.553841,2026-04-29 08:32:19.553834,,[Config: Walking Aid: none • Pace: comfortable],0
+c675c761-d129-4e2b-8adf-e87270fee15e,123,10m-walk,video,cancelled,2026-04-29 08:31:07.077408,2026-04-29 08:31:07.077402,,[Config: Walking Aid: none • Pace: comfortable],0
+08a8034e-6ce3-495b-99e2-91ab387daf62,123,10m-walk,video,cancelled,2026-04-29 08:11:11.306514,2026-04-29 08:11:11.306511,,[Config: Walking Aid: none • Pace: comfortable],0

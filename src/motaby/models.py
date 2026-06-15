@@ -14,6 +14,34 @@ if TYPE_CHECKING:
 
 
 @dataclass
+class ReadoutItem:
+    name: str
+    layer: str
+    description: Optional[str] = None
+    content_type: Optional[str] = None
+    size: Optional[int] = None
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "name": self.name,
+            "layer": self.layer,
+            "description": self.description,
+            "content_type": self.content_type,
+            "size": self.size,
+        }
+
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> "ReadoutItem":
+        return cls(
+            name=data["name"],
+            layer=data.get("layer", ""),
+            description=data.get("description"),
+            content_type=data.get("content_type"),
+            size=data.get("size"),
+        )
+
+
+@dataclass
 class MediaItem:
     id: uuid.UUID
     media_type: str
@@ -44,6 +72,37 @@ class MediaItem:
         )
 
 
+_VIDEO_EXTENSIONS = {".mp4", ".mov", ".avi", ".mkv"}
+
+
+def _parse_readouts(data: Dict[str, Any]) -> "List[ReadoutItem]":
+    """
+    Populate readouts from the server-provided 'readouts' key (detail endpoint)
+    or fall back to parsing assessment.data['readout_urls'] (list endpoint).
+    Excludes QC layer and video files — mirrors the server-side filter.
+    """
+    if "readouts" in data:
+        return [ReadoutItem.from_dict(r) for r in data["readouts"]]
+    raw = (data.get("data") or {}).get("readout_urls", [])
+    result = []
+    for r in raw:
+        if not isinstance(r, dict):
+            continue
+        if (r.get("layer") or "").upper() == "QC":
+            continue
+        name = r.get("name", "")
+        if any(name.lower().endswith(ext) for ext in _VIDEO_EXTENSIONS):
+            continue
+        result.append(ReadoutItem(
+            name=name,
+            layer=r.get("layer", ""),
+            description=r.get("description"),
+            content_type=r.get("content_type"),
+            size=r.get("size"),
+        ))
+    return result
+
+
 @dataclass
 class Assessment:
     id: uuid.UUID
@@ -59,6 +118,7 @@ class Assessment:
     study: Optional[str]
     media_count: int
     media_items: List[MediaItem] = field(default_factory=list)
+    readouts: List[ReadoutItem] = field(default_factory=list)
 
     def to_dict(self) -> Dict[str, Any]:
         return {
@@ -75,6 +135,7 @@ class Assessment:
             "study": self.study,
             "media_count": self.media_count,
             "media_items": [m.to_dict() for m in self.media_items],
+            "readouts": [r.to_dict() for r in self.readouts],
         }
 
     @classmethod
@@ -98,6 +159,7 @@ class Assessment:
             study=data.get("study"),
             media_count=data.get("media_count", 0),
             media_items=[MediaItem.from_dict(m) for m in data.get("media_items", [])],
+            readouts=_parse_readouts(data),
         )
 
 
