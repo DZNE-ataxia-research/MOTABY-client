@@ -8,6 +8,8 @@ output/
 
 motaby_export/
 
+motaby_export*/
+
 # C extensions
 *.so
 
